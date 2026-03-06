@@ -1,0 +1,27 @@
+# Build artifacts
+.build/
+Mira.app/
+Mira.iconset/
+Mira.icns
+
+# Installers (generated, not tracked)
+*.dmg
+dmg_content/
+pack.temp.dmg
+
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+
+# IDE
+.vscode/
+.idea/
+
+# Entitlements (build artifact)
+# Mira.entitlements is tracked — needed for code signing
+.claude/
