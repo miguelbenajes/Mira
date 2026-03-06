@@ -45,10 +45,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return .terminateNow
     }
 
-    func applicationWillTerminate(_ notification: Notification) {
-        windowManager?.stop()
-    }
-
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return false
     }

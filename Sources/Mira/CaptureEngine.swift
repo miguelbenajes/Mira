@@ -17,6 +17,10 @@ class CaptureEngine: NSObject, SCStreamOutput, SCStreamDelegate, ObservableObjec
     private var stream: SCStream?
     private(set) var displayID: CGDirectDisplayID?
 
+    deinit {
+        stopCapture()
+    }
+
     func startCapture(displayID: CGDirectDisplayID) async {
         stopCapture()
         self.displayID = displayID

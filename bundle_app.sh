@@ -31,6 +31,8 @@ cat > "$OUTPUT_DIR/$APP_NAME.app/Contents/Info.plist" <<EOF
     <string>com.coyote.Mira</string>
     <key>CFBundleName</key>
     <string>$APP_NAME</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
     <key>CFBundleIconFile</key>
     <string>AppIcon</string>
     <key>CFBundleShortVersionString</key>
